@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEBRAINS</title>
+    <link rel="website icon" type="png" href="logo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="header1">
+            <img src="logo.png" height="50px" width="100px">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li style="display: block;">
+                    <div class="menu-button" id="menu-button">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    <a href="#" class="signin">Sign in</a>
+    </div>
+    <div class="background-video">
+        <video autoplay muted>
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="getstarted">
+        Get started &rarr;
+    </div>
+    <div class="background-video second main">
+        <video autoplay muted>
+            <source src="tech (online-video-cutter.com) (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <div class="content">
+            <h1 class="head head1">Welcome to </h1><h1 class="head head2" style="font-family: 'myfont';">C O D E B R A I N S</h1>
+            <p>Unlock Practical Coding Insights:<br>
+                Explore Engaging Challenges.<br>
+                Discover Real-world Code Wisdom.</p>
+        </div>
+    </div>
+    <div  class="main">
+    <center><h1 class='focus' style="font-family: 'Times New Roman', Times, serif;opacity: 0.4;"> Main focused languages </h1></center>
+    <hr style="margin-top: 60px;">
+      <div class="marquee-container">
+          <div class="marquee-content">
+            <img src="Python_bw.png" alt="Image 1">
+            <img src="html_bw.png" alt="Image 2">
+            <img src="c++_bw.png" alt="Image 3">
+            <img src="javascript_bw.png" alt="Image 4">
+            <img src="r_bw.png" alt="Image 5">
+            <img src="react_bw.png" alt="Image 6">
+            <img src="mysql_bw.png" alt="Image 7">
+            <img src="css_bw.png" alt="Image 8">
+            <img src="kotlin_bw.png" alt="Image 9">
+            <img src="Java_bw.png" alt="Image 10">
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+      <hr> 
+    </div>
+    <div class="main"></div>
+    <center><h1 style="font-size: 70px;font-family:serif;opacity: 0.3;color:#f1f1f1">LEADERBOARD</h1></center>
+    <div class="card-container">
+        <!-- First Flip Card -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="logo.png" alt="Avatar" style="width:300px;height:300px;">
+                    <h2 style="color: #ed00eb;">C O D E B R A I N S</h2>
+                </div>
+                <div class="flip-card-back" style="background-image: url(silver.jpg );">
+                    <img src="user.png" height="200px" width="200px"/>
+                    <h1>Jane Smith</h1>
+                    <p>SCORE:99</p>
+                    <p>RANK:2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Flip Card (Centered) -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="logo.png" alt="Avatar" style="width:300px;height:300px;">
+                    <h2 style="color: #ed00eb;">C O D E B R A I N S</h2>
+                </div>
+                <div class="flip-card-back" style="background-image: url(gold\ car.jpg);">
+                    <img src="user.png" height="200px" width="200px"/>  
+                    <h1>John Doe</h1>
+                    <p>SCORE:100</p>
+                    <p>RANK:1</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Flip Card -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="logo.png" alt="Avatar" style="width:300px;height:300px;">
+                    <h2 style="color: #ed00eb;">C O D E B R A I N S</h2>
+                </div>
+                <div class="flip-card-back" style="background-image: url(bronze.jpg);">
+                    <img src="user.png" height="200px" width="200px"/>
+                    <h1>Michael Johnson</h1>
+                    <p>SCORE:98</p>
+                    <p>RANK:3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main" style="margin-top: 40px;">
+    <center>
+    <a href="#">Terms and Condtions applied</a>
+    </center>
+</div>
+    <script>
+        $(document).ready(function() {
+            $("#menu-button").click(function() {
+                $(".menu-button").toggleClass("cross");
+                setTimeout(function() {
+                    $(".navbar-list li:not(:first-child)").toggleClass("show");
+                }, 350);
+            });
+
+            $(".getstarted").hide().delay(3500).fadeIn(1000); // 2 seconds delay, 1 second fade in
+    
+            $(".second").hover(function() {
+                $(".content").fadeIn(1000);
+            });
+        });
+        alert("add preview")
+
+    </script>
+</body>
+</html>

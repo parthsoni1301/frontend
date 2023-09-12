@@ -1,0 +1,352 @@
+body {
+    background-color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Arial, sans-serif;
+
+
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f1f1f1; /* For Firefox */
+
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    }
+
+/* For Webkit-based Browsers */
+    body::-webkit-scrollbar {
+    width: 8px;
+    }
+
+    body::-webkit-scrollbar-track {
+    background: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    overflow: hidden;
+    }
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 {
+    float: right;
+}
+
+.menu-button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ED00EB;
+    transition: transform 0.3s ease;
+}
+
+.cross .line-1 {
+    transform: rotate(45deg);
+}
+
+.cross .line-2 {
+    transform: rotate(-45deg);
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+    display: none;
+}
+
+.navbar li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #555;
+}
+
+.show {
+    display: block !important;
+}
+.signin{
+    color: grey;
+}
+.getstarted{
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+    height: 50px; /* Set the desired height */
+    width: 350px;
+    border: 2px solid #333; /* Just for visualization */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 50px; /* Adjust margin as needed */
+    background-color: aliceblue;
+    border-radius: 25px; /* Add rounded edges */
+    background-color: #ED00EB; /* Set background color */
+    color: white; /* Set text color */
+    cursor: pointer;
+    margin-left: 50px;  
+    position: absolute; /* Set position to absolute */
+    top: 615px; /* Position at the top of .imgdiv */
+    left:520px;
+    display: hidden;
+
+}
+
+.getstarted:hover {
+    background-color: #ed00eb;
+    box-shadow: 0 0 5px #ed00eb, 0 0 25px rgba(237, 0, 235, 0.7), 0 0 50px rgba(237, 0, 235, 0.5), 0 0 200px rgba(237, 0, 235, 0.3);
+    border: white;
+}
+.upper{
+    width: 100%;
+    height: 800px;
+}
+.imgdiv {
+margin-left: 460px;
+margin-top: 100px;
+padding: 0;
+position: relative; /* Set position to relative */
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url(aquatic_2/AQUATIC.ttf);
+}
+.background-video {
+    position: relative;
+    max-width: 1300px; /* Adjusted max-width */
+    margin: 0 auto;
+}
+.background-video video {
+    width: 100%;
+    height: auto;
+}
+.content {
+    position: absolute;
+    top: 1100px;
+    left:73%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: none;
+}
+.head {
+    display: inline; }
+.marquee-container {
+    width: 520px;
+    height: 500px; /* Adjust the height as needed */
+    margin-left: 70px;
+}
+
+.marquee-content {
+position: relative;
+animation: zigzag-marquee 30s linear infinite;
+}
+
+.marquee-content img {
+width: 100px; /* Adjust image width as needed */
+height: 100px; /* Adjust image height as needed */
+object-fit: contain; /* Adjust image scaling as needed */
+position: absolute;
+top: 50%; /* Adjust vertical position */
+left: 0;
+transform: translate(-100%, -50%);
+animation: bounce 2s infinite alternate;
+opacity: 0.4;
+}
+
+@keyframes zigzag{
+0% {
+    transform: translateX(0);
+}
+25% {
+    transform: translateX(25%);
+}
+50% {
+    transform: translateX(50%);
+}
+75% {
+    transform: translateX(75%);
+}
+100% {
+    transform: translateX(100%);
+}
+}
+
+@keyframes bounce {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-20px);
+}
+}
+
+/* Adjust positions for each image */
+.marquee-content img:nth-child(1) {
+    left: 0%;
+    animation-delay: 0s;
+    margin-top: 10%;
+}
+
+.marquee-content img:nth-child(2) {
+    left: 25%;
+    animation-delay: -5s;
+    margin-top: 40%;
+}
+
+.marquee-content img:nth-child(3) {
+    left: 50%;
+    animation-delay: -10s;
+    margin-top: 25%;
+}
+
+.marquee-content img:nth-child(4) {
+    left: 75%;
+    animation-delay: -15s;
+    margin-top: 60%;
+}
+
+.marquee-content img:nth-child(5) {
+    left: 100%;
+    animation-delay: -20s;
+    margin-top: 22%;
+}
+
+.marquee-content img:nth-child(6) {
+    left: 125%;
+    animation-delay: -25s;
+    margin-top: 10%;
+}
+
+.marquee-content img:nth-child(7) {
+    left: 150%;
+    animation-delay: -30s;
+    margin-top: 65%;
+}
+
+.marquee-content img:nth-child(8) {
+    left: 175%;
+    animation-delay: -35s;
+    margin-top: 57%;
+}
+
+.marquee-content img:nth-child(9) {
+    left: 200%;
+    animation-delay: -40s;
+    margin-top: 17%;
+}
+
+.marquee-content img:nth-child(10) {
+    left: 225%;
+    animation-delay: -45s;
+    margin-top: 35%;
+}
+.focus{
+    color: #615e61;
+    font-size: 60px;
+}
+hr{
+    border: 3px solid #615e61;
+    width: 80%;
+    opacity: 0.4;
+
+}
+.main{
+    padding-top: 60px;
+}
+.parts{
+    height: 700px;
+    float: left;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 150px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: relative; /* Add this for stacking pseudo-elements */
+    box-shadow: 10px 10px 10px #ed00eb; /* Add the card shadow with color */
+    border: 1px solid #ED00EB;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if the image is missing) */
+.flip-card-front {
+    background-color: black;
+    font-family: 'myfont';
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
